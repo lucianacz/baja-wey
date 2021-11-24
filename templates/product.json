@@ -1,0 +1,147 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "border": {
+          "type": "border",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_labels": true,
+            "variant_popup_option": "Size",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "style": "paragraph"
+          }
+        },
+        "payment_widget": {
+          "type": "payment_widget",
+          "settings": {
+            "column": "right",
+            "style": "closed",
+            "icon": "payment",
+            "title": "Payment",
+            "show_payment_icons": true,
+            "text": "<p>Your payment information is processed securely. We do not store credit card details nor have access to your credit card information.<\/p>"
+          }
+        },
+        "security_widget": {
+          "type": "security_widget",
+          "settings": {
+            "column": "right",
+            "style": "closed",
+            "icon": "security",
+            "title": "Security",
+            "text": "<p>This website is encrypted. We take your security very seriously. All transactions powered by Shopify.<\/p>"
+          }
+        },
+        "shipping_widget": {
+          "type": "shipping_widget",
+          "settings": {
+            "column": "right",
+            "style": "closed",
+            "icon": "shipping",
+            "title": "Shipping",
+            "text": "<p>Rates are approximations. Exact rates will be provided at checkout.<\/p>",
+            "show_estimator": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "border",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "payment_widget",
+        "security_widget",
+        "shipping_widget"
+      ],
+      "settings": {
+        "enable_quick_purchase_bar": true,
+        "show_share_buttons": true,
+        "enable_video_looping": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "columns": 3,
+        "title": "Recommended",
+        "subheading": "<p>You might want to take a closer look.<\/p>",
+        "text_max_width": 42,
+        "aspect_ratio": "natural",
+        "section_contrast": true
+      }
+    },
+    "16371696931ce57243": {
+      "type": "slideshow",
+      "blocks": {
+        "16371696932849b30f-1": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/IMG_1934.jpg",
+            "focal_point": "center_top",
+            "mobile_focal_point": "center_center",
+            "title": "",
+            "subheading": "",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "",
+            "link": "",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#FFFFFF",
+            "color_overlay": "#000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "16371696932849b30f-1"
+      ],
+      "settings": {
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recommendations",
+    "16371696931ce57243"
+  ]
+}

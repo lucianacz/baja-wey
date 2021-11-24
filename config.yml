@@ -1,0 +1,6 @@
+development:
+  password: shptka_75a0c7d330cb9b6aff18f2f9dfb41b08
+  theme_id: "127531745489"
+  store: bajawey.myshopify.com
+  ignore_files:
+    - config/settings_data.json

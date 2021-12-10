@@ -4662,7 +4662,7 @@ html:not(.no-js) body.template-index .header--transparent-home:not(.is-sticky).h
   width:var(--swatch-size);
   height:var(--swatch-size);
   margin:3px;
-  border:6px solid var(--color-background);
+  border:2px solid var(--color-background);
   border-radius:100%;
   box-shadow:0 0 0 1px var(--color-border);
   transition:box-shadow 0.3s ease-in-out

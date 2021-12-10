@@ -1,7 +1,7 @@
 <div
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
-  class="rich-text section{% if section.settings.section_contrast %} section--contrast{% endif %}"
+  class="rich-text {% unless section.settings.margin_none %}section{% endunless %} {% if section.settings.section_contrast %} section--contrast{% endif %}"
 >
   <div class="section__inner rich-text__inner">
     {%- for block in section.blocks -%}
@@ -53,6 +53,12 @@
         "id": "section_contrast",
         "type": "checkbox",
         "label": "t:sections.rich_text.settings.section_contrast.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "margin_none",
+        "label": "No margin",
         "default": false
       }
     ],

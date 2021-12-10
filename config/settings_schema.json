@@ -209,6 +209,12 @@
         "content": "t:settings_schema.fonts.settings.logo__header.content"
       },
       {
+        "id": "custom_font",
+        "type": "checkbox",
+        "label": "Use Skeleto font for titles",
+        "default": true
+      },
+      {
         "type": "font_picker",
         "id": "font_logo",
         "label": "t:settings_schema.fonts.settings.font_logo.label",
@@ -422,6 +428,13 @@
         "label": "t:settings_schema.product.settings.show_swatches_and_chips.label",
         "info": "t:settings_schema.product.settings.show_swatches_and_chips.info",
         "default": false
+      },
+      {
+        "type": "text",
+        "id": "text_color",
+        "label": "Text for recycled colors",
+        "info": "Disclaimer for colors",
+        "default": "The color may be different from the image because it is made with recycled materials found."
       }
     ]
   },

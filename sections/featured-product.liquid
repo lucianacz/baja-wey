@@ -95,9 +95,9 @@
 
               {%- when 'title' -%}
                 {%- if product != blank -%}
-                  <h1 class="product__title product__block product__block--small ff-heading fs-heading-2-large fs-heading-1-base-ns">{{ product.title }}</h1>
+                  <h1 class="product__title product__block product__block--small ff-heading fs-heading-2-large fs-heading-1-base">{{ product.title }}</h1>
                 {%- else -%}
-                  <h1 class="product__title product__block product__block--small ff-heading fs-heading-2-large fs-heading-1-base-ns">{{ 'sections.featured_product.placeholder.title' | t }}</h1>
+                  <h1 class="product__title product__block product__block--small ff-heading fs-heading-2-large fs-heading-1-base">{{ 'sections.featured_product.placeholder.title' | t }}</h1>
                 {%- endif -%}
 
               {%- when 'price' -%}
@@ -231,9 +231,9 @@
                                 >
                                 </button>
                               {%- endfor -%}
-
                               {{ option_values }}
                             </div>
+                            <p class="disclaimer-color">{{ settings.text_color }}</p>
                           {%- endif -%}
 
                           {%- if chip_options contains option_name -%}

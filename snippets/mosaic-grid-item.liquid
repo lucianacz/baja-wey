@@ -102,11 +102,19 @@
       {%- render 'video-pause' -%}
     {% endif %}
 
+    {% if settings.url != blank %}
+    <a href="{{ settings.url }}"
+    class="mosaic-grid__item-fill"
+    style="--color-overlay-color: {{ settings.overlay_color | color_modify: 'alpha', opacity }};"
+    >
+    </a>
+    {% else %}
     <div
       class="mosaic-grid__item-fill"
       style="--color-overlay-color: {{ settings.overlay_color | color_modify: 'alpha', opacity }};"
       >
     </div>
+    {% endif %}
 
     {{ text_block }}
   </div>

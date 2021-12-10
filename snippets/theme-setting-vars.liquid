@@ -1,4 +1,10 @@
 {%- liquid
+  if settings.custom_font
+  assign font_heading_family = 'Skeleto'
+  else
+  assign font_heading_family = settings.font_heading.family
+  endif
+  
   assign font_heading = settings.font_heading
   assign font_body = settings.font_body
   assign font_logo = settings.font_logo
@@ -157,7 +163,7 @@
     --logo-text-transform: {{ logo_text_transform }};
     --logo-letter-spacing: {{ settings.logo_letter_spacing | times: 0.001 | append: 'em' }};
 
-    --font-heading: {{ font_heading.family }}, {{ font_heading.fallback_families }};
+    --font-heading: {{ font_heading_family }}, {{ font_heading.fallback_families }};
     --font-heading-weight: {{ font_heading.weight }};
     --font-heading-style: {{ font_heading.style }};
     --font-heading-light-weight: {{ font_heading_light.weight | default: 'light' }};

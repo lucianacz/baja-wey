@@ -4424,9 +4424,7 @@ html:not(.no-js) body.template-index .header--transparent-home:not(.is-sticky).h
   overflow:hidden;
   border-radius:var(--border-radius)
 }
-.product__media-item.hidden{
-    display:none;
-  }
+
 .product__details{
   width:100%;
 }
@@ -10018,9 +10016,9 @@ button{
 .product-thumbnails__item-link .image__img{
     border-radius:var(--border-radius);
   }
-.product-thumbnails__item-link.active .image__img{
+/* .product-thumbnails__item-link.active .image__img{
       box-shadow:0 0 0 3px var(--color-text);
-    }
+    } */
 .product-thumbnails__item-image{
   position:absolute;
   top:0;

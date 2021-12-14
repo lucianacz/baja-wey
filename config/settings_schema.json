@@ -209,10 +209,24 @@
         "content": "t:settings_schema.fonts.settings.logo__header.content"
       },
       {
+        "type": "select",
         "id": "custom_font",
-        "type": "checkbox",
-        "label": "Use Skeleto font for titles",
-        "default": true
+        "label": "Custom Font",
+        "default": "no_custom",
+        "options": [
+          {
+            "value": "no_custom",
+            "label": "No custom"
+          },
+          {
+            "value": "skeleto",
+            "label": "Skeleto"
+          },
+          {
+            "value": "grandstander",
+            "label": "Grandstander"
+          }
+        ]
       },
       {
         "type": "font_picker",

@@ -63,7 +63,7 @@
         {%- if product != blank -%}
           {%- for media in product.media -%}
             <div
-              class="product__media-item {% unless media.id == featured_media.id %} hidden{% endunless %}"
+              class="product__media-item"
               data-media-item-id="{{ media.id }}"
               data-product-media-wrapper
             >
@@ -384,7 +384,9 @@
   </div>
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
+  {%- comment -%}
   {% render 'lightbox' with images: images %}
+  {%- endcomment -%}
 </div>
 
 {% schema %}

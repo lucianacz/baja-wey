@@ -1,6 +1,8 @@
 {%- liquid
-  if settings.custom_font
+  if settings.custom_font == 'skeleto'
   assign font_heading_family = 'Skeleto'
+  elsif settings.custom_font == 'grandstander'
+  assign font_heading_family = 'Grandstander'
   else
   assign font_heading_family = settings.font_heading.family
   endif

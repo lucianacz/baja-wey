@@ -62,7 +62,11 @@
           </button>
           <div class="footer__group-content">
             {%- if block.type == 'text' -%}
-              <div class="fs-body-base footer__text">{{ block.settings.text }}</div>
+              <div class="fs-body-base footer__text">{{ block.settings.text }}
+                <div class="hide-mobile mt-30">
+                  {% render 'social-icons' %}
+                </div>
+              </div>
 
             {%- elsif block.type == 'menu' -%}
               <div class="footer__links fs-body-base">
@@ -171,7 +175,9 @@
             %}
 
             {%- if show_social_icons -%}
-              {% render 'social-icons' %}
+              <div class="hide-desktop">
+                {% render 'social-icons' %}
+              </div>
             {%- endif -%}
           </div>
         {%- endif -%}

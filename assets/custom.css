@@ -3,33 +3,120 @@
 /* ------------------- */
 
 @font-face {
-    font-family: 'Skeleto';
-    src: url('ElSkeleto.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Skeleto';
+  src: url('ElSkeleto.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-  
 
-.mexican-pattern{
-    margin: 0 auto 10px;
-    display: flex;
+/* ------------------- */
+/* Default  */
+/* ------------------- */
+
+.mt-30{
+  margin-top: 30px;
 }
+
+.hide-mobile{
+  display: none;
+}
+
+@media (min-width: 60em) {
+  .hide-mobile{
+    display: block;
+  }
+
+  .hide-desktop{
+    display: none;
+  }
+}
+
+/* ------------------- */
+/* Pattern  */
+/* ------------------- */
+
+.mexican-pattern {
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------- */
+/* Product page  */
+/* ------------------- */
 
 
 .product__color-swatch {
-    background-size: contain;
+  background-size: contain;
 }
 
 .disclaimer-color {
-    font-style: italic;
-    margin-top: 20px;
-    font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-@media (max-width: 768px){
+
+.product-thumbnails-slick {
+  padding: 0px;
+}
+
+.product-thumbnails__item-image {
+  margin: 5px;
+}
+
+.product-thumbnails__item.slick-slide.slick-current.slick-active .image__img {
+  box-shadow: 0 0 0 3px var(--color-text);
+}
+
+.slick-arrow.slick-custom {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  z-index: 9;
+}
+
+.slick-arrow.slick-custom svg {
+  width: 15px;
+  height: 15px;
+}
+
+.slick-prev.slick-custom {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slick-next.slick-custom {
+  right: -25px;
+}
+
+.slick-prev.slick-custom {
+  left: -25px;
+}
+
+/* ------------------- */
+/* Instafeed  */
+/* ------------------- */
+
+@media (max-width: 768px) {
   .instafeed-container {
     width: 50% !important;
     padding-top: 50% !important;
   }
-} 
+}
+
+/* ------------------- */
+/* Mosaic  */
+/* ------------------- */
+
+@media (max-width: 60em){
+  .mosaic-grid__item:last-of-type {
+    margin-bottom: var(--spacing-medium-large);
+  }
+}
+

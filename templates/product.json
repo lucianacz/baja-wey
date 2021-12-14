@@ -21,7 +21,7 @@
             "show_labels": true,
             "variant_popup_option": "Size",
             "variant_popup_text": "Size guide",
-            "variant_popup_page": ""
+            "variant_popup_page": "size-chart"
           }
         },
         "quantity_selector": {
@@ -88,7 +88,7 @@
         "shipping_widget"
       ],
       "settings": {
-        "enable_quick_purchase_bar": true,
+        "enable_quick_purchase_bar": false,
         "show_share_buttons": true,
         "enable_video_looping": true
       }
@@ -104,8 +104,25 @@
         "section_contrast": true
       }
     },
+    "16379770171e29a0e1": {
+      "type": "video-hero",
+      "settings": {
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "video_url": "{{ product.metafields.bajawey.video_pp.value }}",
+        "image": "shopify:\/\/shop_images\/IMG_1934.jpg",
+        "alignment": "center_top",
+        "overlay_shadow": 20,
+        "color_text": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#181818",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "16371696931ce57243": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16371696932849b30f-1": {
           "type": "slide",
@@ -123,8 +140,8 @@
             "alignment": "center_center",
             "color_text": "#ffffff",
             "color_text_button": "#181818",
-            "color_background_button": "#FFFFFF",
-            "color_overlay": "#000",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
             "overlay_opacity": 0
           }
         }
@@ -142,6 +159,7 @@
   "order": [
     "main",
     "recommendations",
+    "16379770171e29a0e1",
     "16371696931ce57243"
   ]
 }

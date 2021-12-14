@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_image": false,
-        "collection_image_aspect_ratio": "natural",
+        "collection_image_aspect_ratio": "portrait",
         "show_collection_description": true,
         "text_max_width": 42
       }
@@ -17,7 +17,7 @@
         "columns": 3,
         "per_page": 12,
         "pagination": "paginated",
-        "aspect_ratio": "portrait"
+        "aspect_ratio": "square"
       }
     }
   },

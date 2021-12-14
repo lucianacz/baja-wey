@@ -28,8 +28,8 @@
 }
 
 @media (max-width: 768px){
-    .instafeed-container {
-      width: 50% !important;
-      padding-top: 50% !important;
-    }
-  } 
+  .instafeed-container {
+    width: 50% !important;
+    padding-top: 50% !important;
+  }
+} 

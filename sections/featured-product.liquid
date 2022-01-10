@@ -63,7 +63,7 @@
         {%- if product != blank -%}
           {%- for media in product.media -%}
             <div
-              class="product__media-item"
+              class="product__media-item {% unless media.id == featured_media.id %} hidden{% endunless %}"
               data-media-item-id="{{ media.id }}"
               data-product-media-wrapper
             >

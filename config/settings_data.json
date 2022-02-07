@@ -21,6 +21,7 @@
     "color_border_popover": "#181818",
     "color_background_button_popover": "#9ac31c",
     "color_text_button_popover": "#ffffff",
+    "custom_font": "grandstander",
     "font_logo": "frutiger_serif_n7",
     "capitalize_logo": false,
     "logo_letter_spacing": 0,
@@ -96,7 +97,7 @@
             "type": "text",
             "settings": {
               "title": "Contact us",
-              "text": "<p><a href=\"mailto:hello@bajawey.com\" target=\"_blank\" title=\"mailto:hello@bajawey.com\">hello@bajawey.com<\/a><\/p><p>+1(424)209-8740<br\/><a href=\"https:\/\/www.instagram.com\/bajaweyy\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/bajaweyy\/\">@bajaweyy<\/a><\/p>"
+              "text": "<p><a href=\"mailto:hello@bajawey.com\" target=\"_blank\" title=\"mailto:hello@bajawey.com\">hello@bajawey.com<\/a><\/p><p>+1(424)209-8740<\/p>"
             }
           },
           "10b843d6-aadc-45b5-aae3-baaaf45dd117": {

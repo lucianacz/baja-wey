@@ -348,7 +348,7 @@
             "desktop_image": "shopify:\/\/shop_images\/BG-Fabric.jpg",
             "focal_point": "center_bottom",
             "mobile_focal_point": "center_bottom",
-            "title": "Only 5 USD to Ship to the 🇺🇸 🇨🇦 🇲🇽",
+            "title": "<p>Only $5 to Ship to<\/p><p>🇺🇸 🇨🇦 🇲🇽<\/p>",
             "subheading": "",
             "heading_text_size": 56,
             "overlay_shadow": 60,
@@ -360,7 +360,7 @@
             "color_text_button": "#181818",
             "color_background_button": "#ffffff",
             "color_overlay": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 29
           }
         }
       },
@@ -368,8 +368,8 @@
         "slide-1"
       ],
       "settings": {
-        "desktop_height": 100,
-        "mobile_height": 100,
+        "desktop_height": 55,
+        "mobile_height": 50,
         "duration_autoplay": 6
       }
     }
